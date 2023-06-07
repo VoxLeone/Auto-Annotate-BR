@@ -10,4 +10,5 @@ opencv-python
 h5py==2.10.0
 imgaug
 Shapely
+mrcnn==0.2
 IPython[all]
