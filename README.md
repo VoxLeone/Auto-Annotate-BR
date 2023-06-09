@@ -26,9 +26,9 @@ A ferramenta de anotação automática funciona em dois modos - COCO e Personali
 
 NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no repositório, para checar os problemas conhecidos e sua resolução. Sinta-se à vontade para contribuir caso encontre erros/problemas durante a instalação e uso da ferramenta.
 
-## Formato JSON para anotação
+## FORMATO JSON PARA ANOTAÇÃO
 
-### AMOSTRA JSON: 
+### Amostra JSON: 
 
 ```json
 [
@@ -46,7 +46,7 @@ NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no reposit�
 ]
 ```
 
-### FORMATO GENÉRICO JSON:
+### Formato genérico JSON:
 ```
 [
   {
@@ -64,7 +64,7 @@ NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no reposit�
 ]
 ```
 
-###
+##
 IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
 :-------------------------:|:-------------------------:
 ![](asset/bird_house_in_lawn.jpg)  |  ![](asset/bird_house_in_lawn_masked.jpg)
