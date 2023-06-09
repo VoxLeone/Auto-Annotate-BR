@@ -77,9 +77,9 @@ IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
    
    ```
 3. **Se for anotar objetos suportados pelo COCO Dataset**
-   Baixe pesos COCO pré-treinados  (mask_rcnn_coco.h5) do [repositório oficial](https://github.com/matterport/Mask_RCNN/releases) e    armazene-os no diretório raiz (root).
+   Baixe pesos COCO pré-treinados(mask_rcnn_coco.h5) do [repositório oficial](https://github.com/matterport/Mask_RCNN/releases) e      armazene-os no diretório raiz (root).
    **Se for anotar objetos personalizados**
-   Treine Mask RCNN e use os mesmos pesos.
+   Treine Mask RCNN com os mesmos pesos.
 
 4. Execute os comandos abaixo conforme o modo de uso - Anotar COCO ou Personalizado.
   ```bash
