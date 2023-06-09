@@ -26,9 +26,9 @@ A ferramenta de anotação automática funciona em dois modos - COCO e Personali
 
 NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no repositório, para checar os problemas conhecidos e sua resolução. Sinta-se à vontade para contribuir caso encontre erros/problemas durante a instalação e uso da ferramenta.
 
-### Formato JSON para anotação
+## Formato JSON para anotação
 
-## AMOSTRA JSON: 
+### AMOSTRA JSON: 
 
 ```json
 [
@@ -46,7 +46,7 @@ NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no reposit�
 ]
 ```
 
-## FORMATO GENÉRICO JSON:
+### FORMATO GENÉRICO JSON:
 ```
 [
   {
@@ -64,7 +64,7 @@ NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no reposit�
 ]
 ```
 
-##
+###
 IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
 :-------------------------:|:-------------------------:
 ![](asset/bird_house_in_lawn.jpg)  |  ![](asset/bird_house_in_lawn_masked.jpg)
@@ -80,10 +80,10 @@ IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
    ```
 3. **Se for anotar objetos suportados pelo COCO Dataset**
    Baixe pesos COCO pré-treinados do COCO (mask_rcnn_coco.h5) da [releases page](https://github.com/matterport/Mask_RCNN/releases) e    armazene-os no diretório raiz (root).
-   **Sefor anotar objetos personalizados**
+   **Se for anotar objetos personalizados**
    Treine Mask RCNN e use esses pesos.
 
-4. Execute os comandos abaixo com base no modo.
+4. Execute os comandos abaixo conforme o modo de uso - Anotar COCO ou Personalizado.
   ```bash
   python3 annotate.py annotateCoco --image_directory=/caminho/para/o/diretorio/de/imagens/ --label=rotulo_a_anotar --weights=/caminho/para/os/pesos.h5 --displayMaskedImages=False
   ```
@@ -91,7 +91,7 @@ IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
   python3 annotate.py annotateCustom --image_directory=/caminho/para/o/diretorio/de/imagens/ --label=rotulo_a_anotar --weights=/caminho/para/os/pesos.h5 --displayMaskedImages=False
   ```
 
-5. Veja as anotações no /caminho/para/o/diretorio/de/imagens/ como especificado acima.
+5. Confira as anotações no /caminho/para/o/diretorio/de/imagens/ como especificado acima.
 
 
 ## Anotando no MS COCO
@@ -100,10 +100,10 @@ Use pesos pré-treinados para MS COCO. Podemos executar diretamente da linha de 
 # Anotar rótulo definido pelo COCO
 python3 annotate.py annotateCoco --image_directory=/caminho/para/o/diretorio/de/imagens/ --label=rotulo_a_anotar --weights=/caminho/para/os/pesos.h5 --displayMaskedImages=False
 ```
-Nota: --label=rotulo_a_anotar deve estar de acordo com os rótulos do COCO dataset (em inglês  - a internacionalização deve ser feita em outra etapa).
-Consulte [COCO Dataset](https://cocodataset.org/) para mais detalhes.
+Nota: --label=rotulo_a_anotar deve estar de acordo com os rótulos do COCO dataset (em inglês  - a internacionalização deve ser feita em outra etapa). Consulte [COCO Dataset](https://cocodataset.org/) para mais detalhes.
 
 ## Anotando em imagens personalizadas
+
 Use pesos pré-treinados para o rótulo personalizado. Podemos executá-lo diretamente da linha de comando da seguinte forma:
 
 ```
@@ -117,7 +117,7 @@ Nota: --label=rotulo_a_anotar deve ser um rótulo para o qual tenha sido forneci
 
 Leia o post original de Waleed Abdulla [post do blog sobre o exemplo do 'respingo de cor'](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46) onde ele explicou o processo desde a anotação de imagens até o treinamento e o uso dos resultados em um aplicativo de exemplo.
 
-Abaixo O uso de train.py, que é uma versão modificada de balloon.py escrita por Waleed para suportar apenas a parte de treinamento. [Muhammad Hamzah](https://github.com/mdhmz1) é o autor da modificação.
+Abaixo O uso de train.py, que é uma versão modificada de balloon.py escrita por Waleed para suportar apenas a fase de treinamento. [Muhammad Hamzah](https://github.com/mdhmz1) é o autor da modificação.
 ```
     # Treinar um novo modelo a partir de pesos COCO pretreinados
     python3 customTrain.py train --dataset=/caminho/para/dataset/personalizado/ --weights=coco
@@ -126,11 +126,11 @@ Abaixo O uso de train.py, que é uma versão modificada de balloon.py escrita po
     python3 customTrain.py train --dataset=/caminhp/para/dataset/personalizado --weights=last
 ```
 
-## :clap: Supporters
+### :clap: Supporters
 
-## :star: Stargazers
+### :star: Stargazers
 [![Stargazers repo roster for @mdhmz1/Auto-Annotate](https://reporoster.com/stars/dark/mdhmz1/Auto-Annotate)](https://github.com/mdhmz1/Auto-Annotate/stargazers)
-## :twisted_rightwards_arrows: Forkers 
+### :twisted_rightwards_arrows: Forkers 
 [![Forkers repo roster for @mdhmz1/Auto-Annotate](https://reporoster.com/forks/dark/mdhmz1/Auto-Annotate)](https://github.com/mdhmz1/Auto-Annotate/network/members)
 
 ##
