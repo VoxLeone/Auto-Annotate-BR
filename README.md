@@ -8,9 +8,7 @@
 
 
 
-Para uma explicação mais detalhada e aplicação do código, consulte [este artigo no Medium](https://medium.com/analytics-vidhya/automated-image-annotation-using-auto-annotate-tool-f8fff8ea4900).
-
-<a href="https://medium.com/analytics-vidhya/automated-image-annotation-using-auto-annotate-tool-f8fff8ea4900">![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white) </a>
+Para uma explicação mais detalhada e aplicação do código, consulte [este artigo no Medium](https://medium.com/analytics-vidhya/automated-image-annotation-using-auto-annotate-tool-f8fff8ea4900).<a href="https://medium.com/analytics-vidhya/automated-image-annotation-using-auto-annotate-tool-f8fff8ea4900">![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white) </a>
 
 
 **Tão simples quanto dizer: "Anote todas as placas de rua (rótulo) no dataset (diretório) do carro autônomo".**
