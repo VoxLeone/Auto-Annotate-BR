@@ -124,10 +124,8 @@ Abaixo O uso de train.py, que é uma versão modificada de balloon.py escrita po
     python3 customTrain.py train --dataset=/caminhp/para/dataset/personalizado --weights=last
 ```
 
-### :clap: Supporters
+### :clap: Apoiadores
 
-### :star: Stargazers
-[![Stargazers repo roster for @mdhmz1/Auto-Annotate](https://reporoster.com/stars/dark/mdhmz1/Auto-Annotate)](https://github.com/mdhmz1/Auto-Annotate/stargazers)
 ### :twisted_rightwards_arrows: Forkers 
 [![Forkers repo roster for @mdhmz1/Auto-Annotate](https://reporoster.com/forks/dark/mdhmz1/Auto-Annotate)](https://github.com/mdhmz1/Auto-Annotate/network/members)
 
