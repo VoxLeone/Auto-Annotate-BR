@@ -93,6 +93,7 @@ IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
 5. Confira as anotações no /caminho/para/o/diretorio/de/imagens/ como especificado acima.
 
 
+
 ### Anotando no MS COCO
 Use pesos pré-treinados para MS COCO. Podemos executar diretamente da linha de comando da seguinte forma:
 ```
@@ -100,6 +101,7 @@ Use pesos pré-treinados para MS COCO. Podemos executar diretamente da linha de 
 python3 annotate.py annotateCoco --image_directory=/caminho/para/o/diretorio/de/imagens/ --label=rotulo_a_anotar --weights=/caminho/para/os/pesos.h5 --displayMaskedImages=False
 ```
 Nota: --label=rotulo_a_anotar deve estar de acordo com os rótulos do COCO dataset (em inglês  - a internacionalização deve ser feita em outra etapa). Consulte [COCO Dataset](https://cocodataset.org/) para mais detalhes.
+
 
 ### Anotando em imagens personalizadas
 
