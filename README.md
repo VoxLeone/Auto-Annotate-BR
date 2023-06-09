@@ -62,13 +62,13 @@ NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no reposit�
 ]
 ```
 
-##
+###
 IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
 :-------------------------:|:-------------------------:
 ![](asset/bird_house_in_lawn.jpg)  |  ![](asset/bird_house_in_lawn_masked.jpg)
 
 
-### Instalação
+## Instalação
 1. Clone este repositório.
 
 2. Instale as dependências.
@@ -93,7 +93,7 @@ IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
 5. Confira as anotações no /caminho/para/o/diretorio/de/imagens/ como especificado acima.
 
 
-## Anotando no MS COCO
+### Anotando no MS COCO
 Use pesos pré-treinados para MS COCO. Podemos executar diretamente da linha de comando da seguinte forma:
 ```
 # Anotar rótulo definido pelo COCO
@@ -101,7 +101,7 @@ python3 annotate.py annotateCoco --image_directory=/caminho/para/o/diretorio/de/
 ```
 Nota: --label=rotulo_a_anotar deve estar de acordo com os rótulos do COCO dataset (em inglês  - a internacionalização deve ser feita em outra etapa). Consulte [COCO Dataset](https://cocodataset.org/) para mais detalhes.
 
-## Anotando em imagens personalizadas
+### Anotando em imagens personalizadas
 
 Use pesos pré-treinados para o rótulo personalizado. Podemos executá-lo diretamente da linha de comando da seguinte forma:
 
@@ -112,9 +112,9 @@ python3 annotate.py annotateCustom --image_directory=/caminho/para/o/diretorio/d
 Nota: --label=rotulo_a_anotar deve ser um rótulo para o qual tenha sido fornecido peso (ex: 'cow').
 
 
-## Treinando seu próprio dataset
+### Treinando seu próprio dataset
 
-Leia o post original de Waleed Abdulla [post do blog sobre o exemplo do 'respingo de cor'](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46) onde ele explicou o processo desde a anotação de imagens até o treinamento e o uso dos resultados em um aplicativo de exemplo.
+Leia o post original [no blog de Waleed Abdulla](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46) onde ele explicou o processo, desde a anotação de imagens até o treinamento e o uso dos resultados em um aplicativo de exemplo.
 
 Abaixo O uso de train.py, que é uma versão modificada de balloon.py escrita por Waleed para suportar apenas a fase de treinamento. [Muhammad Hamzah](https://github.com/mdhmz1) é o autor da modificação.
 ```
