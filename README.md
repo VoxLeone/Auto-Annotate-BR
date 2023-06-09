@@ -8,27 +8,27 @@
 
 
 
-Para uma explicação mais detalhada e uso do código, consulte este [artigo no Medium](https://medium.com/analytics-vidhya/automated-image-annotation-using-auto-annotate-tool-f8fff8ea4900).
+Para uma explicação mais detalhada e aplicação do código, consulte [este artigo no Medium](https://medium.com/analytics-vidhya/automated-image-annotation-using-auto-annotate-tool-f8fff8ea4900).
 
 <a href="https://medium.com/analytics-vidhya/automated-image-annotation-using-auto-annotate-tool-f8fff8ea4900">![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white) </a>
 
 
-**Tão simples quanto dizer: "Anote todas as placas de rua (rótulo) no dataset (diretório) do carro autônomo" e PRONTO!**
-Toda e qualquer imagem no diretório do dataset contendo uma placa de rua é filtrada e a anotação de segmentação é executada em um único comando.
+**Tão simples quanto dizer: "Anote todas as placas de rua (rótulo) no dataset (diretório) do carro autônomo".**
+Toda e qualquer imagem no diretório do dataset que contenha uma placa de rua é então filtrada e a anotação de segmentação é executada em um único comando.
 
 Auto-Annotate-BR fornece anotação automática por máscaras de segmentação baseada nos rótulos definidos para os objetos nas imagens de um diretório. A ferramenta é capaz de fornecer anotações automatizadas para os rótulos definidos no dataset COCO e também oferece suporte a rótulos personalizados. Ela é construída sobre a arquitetura [Mask R-CNN](https://github.com/matterport/Mask_RCNN). 
 
 ![Working Sample: ANNOTATE CUSTOM](asset/AutoAnnotate-Working_LowRes.png)
 
-A ferramenta de anotação automática funciona em dois modos
-* **Anotação de rótulo COCO** - NENHUM TREINAMENTO DE NECESSÁRIO. Basta usar os pesos do dataset COCO. Aponte para o diretório corretos e as anotações estão prontas.
-* **Anotação de rótulo personalizado** - Treine o modelo para o rótulo personalizado. Use os pesos e anote.
+A ferramenta de anotação automática funciona em dois modos - COCO e Personalizado.
+* **Anotação de rótulo COCO** - Nenhum treinamento de modelo é necessário. Basta usar os pesos do dataset COCO. Aponte para o diretório correto e as anotações estão prontas.
+* **Anotação de rótulo personalizado** - Treine o modelo para seu rótulo personalizado. Use os pesos e anote.
 
-NOTE: Please refer to [knownIssues.md](knownIssues.md) file in the repo for known issues and their resolution. Please feel free to contribute in case of any errors/issues arising during the installation and usage of the tool.
+NOTA: Gentileza consultar o arquivo [knownIssues.md](knownIssues.md) no repositório, para checar os problemas conhecidos e sua resolução. Sinta-se à vontade para contribuir caso encontre erros/problemas durante a instalação e uso da ferramenta.
 
-## Formato JSON para anotação
+### Formato JSON para anotação
 
-### AMOSTRA JSON: 
+## AMOSTRA JSON: 
 
 ```json
 [
@@ -46,7 +46,7 @@ NOTE: Please refer to [knownIssues.md](knownIssues.md) file in the repo for know
 ]
 ```
 
-### FORMATO GENÉRICO JSON:
+## FORMATO GENÉRICO JSON:
 ```
 [
   {
@@ -64,13 +64,13 @@ NOTE: Please refer to [knownIssues.md](knownIssues.md) file in the repo for know
 ]
 ```
 
-###
+##
 IMAGEM ORIGINAL            |  IMAGEM 'MASCARADA'
 :-------------------------:|:-------------------------:
 ![](asset/bird_house_in_lawn.jpg)  |  ![](asset/bird_house_in_lawn_masked.jpg)
 
 
-## Instalação
+### Instalação
 1. Clone este repositório.
 
 2. Instale as dependências.
@@ -128,9 +128,9 @@ Abaixo O uso de train.py, que é uma versão modificada de balloon.py escrita po
 
 ## :clap: Supporters
 
-### :star: Stargazers
+## :star: Stargazers
 [![Stargazers repo roster for @mdhmz1/Auto-Annotate](https://reporoster.com/stars/dark/mdhmz1/Auto-Annotate)](https://github.com/mdhmz1/Auto-Annotate/stargazers)
-### :twisted_rightwards_arrows: Forkers 
+## :twisted_rightwards_arrows: Forkers 
 [![Forkers repo roster for @mdhmz1/Auto-Annotate](https://reporoster.com/forks/dark/mdhmz1/Auto-Annotate)](https://github.com/mdhmz1/Auto-Annotate/network/members)
 
 ##
