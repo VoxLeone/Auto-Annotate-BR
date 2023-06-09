@@ -105,7 +105,7 @@ Nota: --label=rotulo_a_anotar deve estar de acordo com os rótulos do COCO datas
 
 ### Anotando em imagens personalizadas
 
-Use pesos pré-treinados para o rótulo personalizado. Podemos executá-lo diretamente da linha de comando da seguinte forma:
+Use pesos pré-treinados para rótulos personalizados. Execute diretamente da linha de comando da seguinte forma:
 
 ```
 # Annotate Custom
