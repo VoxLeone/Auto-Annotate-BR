@@ -5,7 +5,7 @@ cython
 matplotlib
 scikit-image
 tensorflow==1.15
-keras==2.0.8
+keras==2.2.4 # originalmente 2.0.8
 opencv-python
 h5py==2.10.0
 imgaug
