@@ -1,19 +1,19 @@
-# Auto Annotate - Known Issues
+# Auto Annotate - BR - Bugs Relatados
 
-Sharing below a few of the known issues for the Auto Annotate tool. These known issues are basically the ones arising due to python environment disparity (different version of the packages installed locally) or the bugs which have not been resolved yet and have a workaround.
+Compartilhamos abaixo alguns dos problemas conhecidos da ferramenta Auto-Annotate-BR. Esses 'bugs' são basicamente os que surgem devido à disparidade do ambiente python (versão diferente dos pacotes instalados localmente - ver requirements.txt) ou aos bugs que ainda não foram resolvidos e têm uma solução alternativa.
 
-**❤ </> Please feel free to contribute to this page. </> ❤**
+**❤ </> Fique à vontade para contribuir para esta página. </> ❤**
 
 ---
-## 1. AttributeError: 'str' object has no attribute 'decode'
+## 1. Mensagem de erro: AttributeError: 'str' object has no attribute 'decode'
 
-### Contributer     :  [jarleven](https://github.com/jarleven)
-### Fix:
+### Colaborador     :  [jarleven](https://github.com/jarleven)
+### Solução:
 Downgrade h5py. 
 ```
 pip install 'h5py==2.10.0' --force-reinstall
 ```
-### Reference:
+### Referência:
 https://stackoverflow.com/questions/53740577/does-any-one-got-attributeerror-str-object-has-no-attribute-decode-whi
 
 ### Stack Trace:
